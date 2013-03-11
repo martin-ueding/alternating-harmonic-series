@@ -12,6 +12,7 @@
 #include <stdio.h>
 
 int main() {
+	int limit = 3000;
 	float grenzwert;
 	float aktuell = 0.0;
 
@@ -37,7 +38,7 @@ int main() {
 	}
 
 	// Gehe einige Folgenglieder durch …
-	for (int i = 0; i < 300; i++) {
+	for (int i = 0; i < limit; i++) {
 		// Falls der aktuelle Wert unterhalb des Grenzwertes liegt, addiere ein
 		// positives Folgenglied auf.
 		if (aktuell < grenzwert) {
