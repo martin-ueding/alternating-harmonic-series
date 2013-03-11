@@ -4,6 +4,9 @@
  * Dieses Programm nimmt einen Grenzwert für die alternierende geometrische
  * Reihe entgegen und ordnet die Elemente so um, dass auch wirklich dieser
  * Grenzwert herauskommt.
+ *
+ * Kompiliert werden muss mit C99 Standard. Mit dem `gcc` ist das die Option
+ * `-std=c99`.
  */
 
 #include <stdio.h>
