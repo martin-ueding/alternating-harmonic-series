@@ -37,7 +37,7 @@ int main() {
 	}
 
 	// Gehe einige Folgenglieder durch …
-	for (int i = 0; i < 30; i++) {
+	for (int i = 0; i < 300; i++) {
 		// Falls der aktuelle Wert unterhalb des Grenzwertes liegt, addiere ein
 		// positives Folgenglied auf.
 		if (aktuell < grenzwert) {
