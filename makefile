@@ -4,8 +4,12 @@
 CC = gcc
 CFLAGS = -O3 -Wall -std=c99 -pedantic
 
+# Suche alle Dateien raus und generiere aus jedem `.c` ein `.o`.
+cfiles = $(wildcard *.c)
+ofiles = $(cfiles:.c=.o)
+
 # Das Programm hängt von folgenden `.o` ab:
-grenzwert: grenzwert.o
+grenzwert: $(ofiles)
 
 # Dies lässt `make dep` durch `gcc` die Abhängigkeiten aller `.c` Dateien finden und als makefile ausgeben.
 dep:
