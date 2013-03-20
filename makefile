@@ -2,7 +2,7 @@
 
 # Compiler wählen und Flags setzen.
 CC = gcc
-CFLAGS = -O3 -Wall -std=c99 -pedantic
+CFLAGS = -O3 -Wall -std=c99 -pedantic -g
 
 # Suche alle Dateien raus und generiere aus jedem `.c` ein `.o`.
 cfiles = $(wildcard *.c)
