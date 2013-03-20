@@ -11,13 +11,7 @@
 
 #include <stdio.h>
 
-#include "modul.h"
-
 int main() {
-	hallo();
-
-	return 0;
-
 	int limit = 3000;
 	float grenzwert;
 	float aktuell = 0.0;
