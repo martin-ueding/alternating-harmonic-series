@@ -43,7 +43,7 @@ int main() {
 		// Falls der aktuelle Wert unterhalb des Grenzwertes liegt, addiere ein
 		// positives Folgenglied auf.
 		if (aktuell < grenzwert) {
-			aktuell += 1.0/pos;
+			aktuell += 1.0 / pos;
 			// Gib das zuletzt benutzte Folgenglied aus.
 			printf("+ 1/%3d", pos);
 			// Gehe zum nächsten Folgenglied.
@@ -52,13 +52,13 @@ int main() {
 		// Falls der aktuelle Wert zu groß ist, addiere ein negatives
 		// Folgenglied.
 		else {
-			aktuell -= 1.0/neg;
+			aktuell -= 1.0 / neg;
 			// Gib das zuletzt benutzte Folgenglied aus.
 			printf("- 1/%4d", neg);
 			// Gehe zum nächsten Folgenglied.
 			neg += 2;
 		}
-			printf(", aktuell: %+8f, Fehler: %+8f\n", aktuell, aktuell-grenzwert);
+		printf(", aktuell: %+8f, Fehler: %+8f\n", aktuell, aktuell - grenzwert);
 	}
 
 	// Alles okay, gebe 0 zurück.
