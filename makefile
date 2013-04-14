@@ -20,4 +20,6 @@ dep:
 
 .PHONY: clean
 clean:
+	$(RM) *.o
+	$(RM) dep.makefile
 	$(RM) grenzwert
