@@ -1,4 +1,4 @@
-/* Copyright © 2013 Martin Ueding <dev@martin-ueding.de> */
+/* Copyright © 2013-2014 Martin Ueding <dev@martin-ueding.de> */
 
 /**
  * Dieses Programm nimmt einen Grenzwert für die alternierende geometrische
@@ -45,7 +45,7 @@ int main() {
 		if (aktuell < grenzwert) {
 			aktuell += 1.0 / pos;
 			// Gib das zuletzt benutzte Folgenglied aus.
-			printf("+ 1/%3d", pos);
+			printf("+ 1/%4d", pos);
 			// Gehe zum nächsten Folgenglied.
 			pos += 2;
 		}
